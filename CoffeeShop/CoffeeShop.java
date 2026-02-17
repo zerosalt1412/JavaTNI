@@ -48,6 +48,17 @@ public class CoffeeShop {
                 order1++;
                 total += e.calculateFinalPrice();
             }
+            else if (menu == 2){
+                Frappuccino f = orderFrappuccino();
+                System.out.println(f);
+                order2++;
+                total += f.calculateFinalPrice();
+
+            }
+            else break;
+            System.out.println("\nEspresso order = " + order1);
+            System.out.println("Frappucino order = " + order2);
+            System.out.println("Total price = " + total + " Baht");
         }
     }
 
